@@ -1,0 +1,12 @@
+<view>
+   <view class="tip">插值语法</view>
+  <view>{{message}}</view>
+  <view class="tip">wx:for命令</view>
+  <block wx:for="{{movieList}}"  wx:key="index">
+    <view>
+      {{item}}
+    </view>
+  </block>
+  <button bind:tap="getData">获取数据</button>
+</view>
+  
