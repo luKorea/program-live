@@ -8,5 +8,8 @@
     </view>
   </block>
   <button bind:tap="getData">获取数据</button>
+
+   <view class="tip">购物车案例</view>
+   <table></table>
 </view>
   
