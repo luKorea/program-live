@@ -1,0 +1,5 @@
+/* pages/base-component/base-component.wxss */
+
+.img-wrap {
+  width: 100%;
+}

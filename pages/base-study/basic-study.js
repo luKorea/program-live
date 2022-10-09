@@ -1,4 +1,5 @@
 // pages/base-study/basic-study.js
+const app = getApp();
 Page({
 
   /**
@@ -7,16 +8,32 @@ Page({
   data: {
     message: '字符串展示',
     movieList: ['案例一', '案例二', '案例三', '案例四'],
-    fieldList: [
-      { name: '序号', props: 'id'},
-      { name: '书名', props: 'name'},
-      { name: '日期', props: 'date'},
-      { name: '价格', props: 'price'},
-      { name: '数量', props: 'count'},
-      { name: '操作', props: 'handler'},
-    ],
-    dataList: [
+    fieldList: [{
+        name: '序号',
+        props: 'id'
+      },
       {
+        name: '书名',
+        props: 'name'
+      },
+      {
+        name: '日期',
+        props: 'date'
+      },
+      {
+        name: '价格',
+        props: 'price'
+      },
+      {
+        name: '数量',
+        props: 'count'
+      },
+      {
+        name: '操作',
+        props: 'handler'
+      },
+    ],
+    dataList: [{
         id: 1,
         name: '《海底两万里》',
         price: 99,
@@ -44,17 +61,22 @@ Page({
         count: 1,
         date: new Date().toLocaleString()
       }
-    ]
+    ],
+    userInfo: null
   },
 
-  getData () {
+  getData() {
     console.log(this.data);
+    this.setData({
+      userInfo: app.globalData.userInfo
+    })
+    console.log(app)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.getData();
   },
 
   /**
@@ -67,16 +89,12 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow() {
-
-  },
+  onShow(options) {},
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide() {
-
-  },
+  onHide(options) {},
 
   /**
    * 生命周期函数--监听页面卸载

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/base-component/base-component",
     "pages/base-study/basic-study",
     "pages/index/index"
   ],

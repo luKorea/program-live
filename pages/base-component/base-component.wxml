@@ -1,0 +1,30 @@
+<!-- pages/base-component/base-component.wxml -->
+<view class="wrap">
+  <view class="tip">Text属性学习</view>
+  <view>
+    <text user-select="{{true}}">user-select 设置文本可选择</text>
+  </view>
+  <view class="tip">Button组件学习</view>
+  <button type="primary" class="mt">primary按钮</button>
+  <button type="default" class="mt">default按钮</button>
+  <button type="warn" class="mt">warn按钮</button>
+  <button plain class="mt">镂空按钮</button>
+  <button disabled class="mt">禁用按钮</button>
+  <button loading type="warn">loading按钮</button>
+  <view class="tip">按钮Open-Type属性</view>
+  <button type="warn" open-type="contact" plain class="mt">contact客服</button>
+  <button type="primary" open-type="getUserInfo" bindgetuserinfo="getuserinfo" plain class="mt">
+    获取用户信息
+  </button>
+  <button type="primary" plain class="mt" bindtap="getUserInfoToApi">wx.getUserProfile</button>
+  <button type="primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" plain class="mt">
+    用户手机号码
+  </button>
+  <view class="tip">image组件</view>
+  <image class="img-wrap" show-menu-by-longpress="{{true}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="widthFix"></image>
+  <view class="tip">show-menu-by-longpress设置长按图片分享</view>
+  <button type="primary" bindtap="handleChoseImage" class="mt">选择图片打开</button>
+  <image src="{{choseImage}}"></image>
+  <view class="tip">scroll-view</view>
+  <scroll-view></scroll-view>
+</view>

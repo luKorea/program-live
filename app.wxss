@@ -7,17 +7,28 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
 .tip {
-    width: 92%;
-    padding:8px 16px;
-    margin: 10px auto;
-    box-sizing: border-box;
-    border-radius: 4px;
-    position: relative;
-    background-color: #f56c6c;
-    color: #fff;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+  width: 92%;
+  padding: 8px 16px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  background-color: #f56c6c;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt {
+  margin-bottom: 10px;
+}
+
+.wrap {
+  margin: 6px;
+  padding-bottom: 20px;
 }
