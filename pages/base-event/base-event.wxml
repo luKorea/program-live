@@ -7,3 +7,5 @@
   这是外层
   <view class="inner" id="children">这是内层</view>
 </view>
+<view class="tip">mark语法</view>
+<button type="primary" mark:info="{{markData}}" bindtap="markEvent">MarkName</button>
