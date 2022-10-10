@@ -1,0 +1,9 @@
+<view class="tip">小程序中的事件学习</view>
+
+<button type="primary" bindtap="handleClick" data-name="korea">事件对象</button>
+
+<view class="tip">target与currentTarget的区别</view>
+<view class="outer" bindtap="eventObject" id="parent" data-name="parent">
+  这是外层
+  <view class="inner" id="children">这是内层</view>
+</view>

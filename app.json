@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/base-event/base-event",
     "pages/base-wxs/base-wxs",
     "pages/base-component/base-component",
     "pages/base-study/basic-study",
