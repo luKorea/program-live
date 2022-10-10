@@ -1,1 +1,2 @@
 /* pages/base-study/basic-study.wxss */
+@import 'basic-study-wxa-auto-dark.wxss'

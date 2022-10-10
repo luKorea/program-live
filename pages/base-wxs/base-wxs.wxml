@@ -1,0 +1,27 @@
+<wxs module="utils" src="/utils/format.wxs"></wxs>
+<view>
+  <block wx:for="{{dataList}}" wx:key="id">
+    <view class="tip item">
+      <text>名称: {{item.name}}</text>
+      <text>价格: {{utils.formatData(item.price)}}</text>
+      <text>数量: {{item.count}}</text>
+    </view>
+  </block>
+  <view class="tip">总价格: {{utils.reducePrice(dataList)}}</view>
+</view>
+
+<!-- 
+  1. 方式一
+    1. 编写wxs组件
+    2. 配置module名字
+    3. 定义只能通过es5规范
+    4. 需要通过commandJS规范导出 
+  -->
+<!-- <wxs module="utils">
+  function formatData(str) {
+    return "¥" + str.toFixed(2)
+  }
+  module.exports = {
+    formatData: formatData
+  }
+</wxs> -->

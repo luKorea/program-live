@@ -1,0 +1,6 @@
+/* pages/base-wxs/base-wxs.wxss */
+@import 'base-wxs-wxa-auto-dark.wxss';
+
+.item {
+  justify-content: space-between;
+}

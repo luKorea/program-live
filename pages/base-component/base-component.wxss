@@ -3,3 +3,5 @@
 .img-wrap {
   width: 100%;
 }
+
+@import 'base-component-wxa-auto-dark.wxss'
