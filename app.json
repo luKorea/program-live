@@ -1,11 +1,15 @@
 {
   "pages": [
+    "pages/base-components/base-components",
     "pages/base-event/base-event",
     "pages/base-wxs/base-wxs",
     "pages/base-component/base-component",
     "pages/base-study/basic-study",
     "pages/index/index"
   ],
+  "usingComponents": {
+    "view-list": "/components/list/list"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

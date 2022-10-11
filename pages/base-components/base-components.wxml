@@ -1,0 +1,3 @@
+<view class="tip">小程序组件化开发</view>
+
+<view-list list="{{dataList}}" tip="tip-blue" title="{{title}}" bind:changeTitle="handleChangeTitle"></view-list>

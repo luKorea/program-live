@@ -1,0 +1,5 @@
+/* components/list/list.wxss */
+
+.item {
+  justify-content: space-between;
+}

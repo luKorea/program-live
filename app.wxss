@@ -24,6 +24,21 @@
   justify-content: center;
 }
 
+.tip-blue {
+  width: 92%;
+  padding: 8px 16px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  background-color: #008c8c;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mt {
   margin-bottom: 10px;
 }
