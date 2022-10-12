@@ -1,0 +1,25 @@
+/* components/slot-header/slot-header.wxss */
+.header-container {
+  width: 100%;
+  height: 52px;
+  line-height: 52px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.left,
+.center,
+.default,
+.right {
+  flex: 1;
+}
+
+.default {
+  display: none;
+}
+
+.left:empty+.default {
+  display: block;
+}

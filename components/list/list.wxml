@@ -9,4 +9,6 @@
     </view>
   </block>
   <view class="tip">总价格: {{utils.formatData(utils.reducePrice(list))}}</view>
+
+  <view class="tip">这里编写插槽的写法</view>
 </view>

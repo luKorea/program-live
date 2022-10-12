@@ -1,0 +1,6 @@
+<slot-header>
+  <view slot="left">左边</view>
+  <view slot="center">中间</view>
+  <view slot="right">右边</view>
+</slot-header>
+<view class="tip">组件插槽的使用</view>

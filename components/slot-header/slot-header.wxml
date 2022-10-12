@@ -1,0 +1,13 @@
+<view class="header-container">
+  <view class="left">
+    <!-- 小程序插槽不支持默认值 -->
+    <slot name="left"></slot>
+  </view>
+  <!-- <view class="default">默认值配置</view> -->
+  <view class="center">
+    <slot name="center"></slot>
+  </view>
+  <view class="right">
+    <slot name="right"></slot>
+  </view>
+</view>

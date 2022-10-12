@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/base-slot-components/base-slot-components",
     "pages/base-components/base-components",
     "pages/base-event/base-event",
     "pages/base-wxs/base-wxs",
@@ -8,7 +9,8 @@
     "pages/index/index"
   ],
   "usingComponents": {
-    "view-list": "/components/list/list"
+    "view-list": "/components/list/list",
+    "slot-header": "/components/slot-header/slot-header"
   },
   "window": {
     "backgroundTextStyle": "light",
