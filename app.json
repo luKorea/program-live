@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/base-api/base-api",
+    "pages/base-request/base-request",
     "pages/base-slot-components/base-slot-components",
     "pages/base-components/base-components",
     "pages/base-event/base-event",
@@ -19,5 +21,13 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您的位置"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ]
 }

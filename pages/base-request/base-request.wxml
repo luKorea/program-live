@@ -1,0 +1,7 @@
+<view class="tip">网络请求获取数据</view>
+
+<block wx:for="{{list}}">
+  <view class="tip-blue" wx:key="cityId">
+    {{item.cityName}}-{{item.latitude}}-{{item.longitude}}
+  </view>
+</block>

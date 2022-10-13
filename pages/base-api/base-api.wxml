@@ -1,0 +1,7 @@
+<view class="tip">小程序API学习</view>
+<button type="primary" bindtap="showInfo" class="mt">showToast</button>
+<button type="primary" bindtap="showInfoModal" class="mt">showModal</button>
+<button type="primary" bindtap="showAction" class="mt">showActionSheet</button>
+<button type="primary" open-type="share" class="mt">分享</button>
+<button type="warn" class="mt" plain bindtap="getSystemInfo">获取设备信息</button>
+<button type="warn" class="mt" plain bindtap="getLoaction">获取位置信息</button>

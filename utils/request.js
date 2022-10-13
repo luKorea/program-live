@@ -1,10 +1,13 @@
+const BASE_URl = 'http://codercba.com:1888/api'
 class HGRequest {
-  request(url, method, data) {
+  constructor(baseUrl) {
+    this.baseUrl = baseUrl
+  }
+  request(options) {
     return new Promise((resolve, reject) => {
       wx.request({
-        url,
-        method,
-        data,
+        ...options,
+        url: this.baseUrl + options.url,
         success(res) {
           resolve(res)
         },
@@ -14,12 +17,18 @@ class HGRequest {
       })
     })
   }
-  get(url, data) {
-    return this.request(url, 'GET', data)
+  get(options) {
+    return this.request({
+      ...options,
+      method: 'GET'
+    })
   }
-  post(url, data) {
-    return this.request(url, 'POST', data)
+  post(options) {
+    return this.request({
+      ...options,
+      method: 'POST'
+    })
   }
 }
 
-export const hgRequest = new HGRequest()
+export const hgRequest = new HGRequest(BASE_URl)
