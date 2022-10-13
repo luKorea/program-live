@@ -1,0 +1,4 @@
+<view class="tip">展示上一个页面传递的数据</view>
+<view class="tip-blue">姓名: {{userInfo.name}} 年龄: {{userInfo.age}}</view>
+<button type="primary" class="mt" plain bindtap="goHome1">回到上一个页面并且修改上一个页面的数据, 方式一</button>
+<button type="warn" plain bindtap="goHome2">回到上一个页面并且修改上一个页面的数据, 方式二</button>

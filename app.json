@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/home/home",
+    "pages/detail/detail",
     "pages/base-api/base-api",
     "pages/base-request/base-request",
     "pages/base-slot-components/base-slot-components",
